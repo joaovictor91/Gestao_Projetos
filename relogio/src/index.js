@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Horas from './Horas';
+import Data from './Data';
+import Baner from './Baner';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <Data></Data>
+    <p></p>
+    <Horas></Horas>
+    <p></p>
+    <Baner></Baner>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
