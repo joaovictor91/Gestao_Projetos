@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Titulo from './Titulo';
+import Titulo2 from './Titulo2';
+import Cores from './Cores';
+import Tabuada from './Tabuada';
+
+let n = prompt("Digite um número", "5");
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cores />
+      <Titulo titulo="FATEC"
+              texto = "Faculdade de Tecnologia de Presidente Prudente"
+              link = "https://www.fatec.edu.br" 
+      />
+      <Titulo2 />
+      <Tabuada numero = {n} /> 
     </div>
   );
 }
